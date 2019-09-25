@@ -1,0 +1,31 @@
+COLORTOOL v1.0
+SECTION PALETTE 0
+
+SECTION DOCUMENT 481
+{
+ "id": "15693777092668139190",
+ "filepath": "/home/mark/fuel/data/godot/ldjams/LDJAM45/godot_project_folder/external/ldjam45_palette.clrpal",
+ "settings": {
+  "snap_to_grid": true,
+  "grid_size": {
+   "_t": "Vector2",
+   "value": [
+    16,
+    16
+   ]
+  },
+  "draw_grid": false,
+  "zoom": 0,
+  "scroll": {
+   "_t": "Vector2",
+   "value": [
+    0,
+    0
+   ]
+  },
+  "old_path_root": "/home/mark/fuel/data/godot/ldjams/LDJAM45/godot_project_folder/external"
+ },
+ "objects": [
+
+ ]
+}
