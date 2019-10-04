@@ -24,6 +24,10 @@ config/icon="res://icon.png"
 window/size/width=1072
 window/size/height=603
 
+[editor_plugins]
+
+enabled=PoolStringArray( "camera_shake", "convenient_state_machine", "fancy_menu", "movement" )
+
 [importer_defaults]
 
 texture={
