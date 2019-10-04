@@ -131,5 +131,5 @@ centered = false
 
 [node name="audio_stream_player" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 93 )
-volume_db = -10.0
+volume_db = -20.0
 
