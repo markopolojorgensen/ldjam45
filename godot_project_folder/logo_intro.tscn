@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=2]
+[gd_scene load_steps=95 format=2]
 
 [ext_resource path="res://logo_intro.gd" type="Script" id=1]
 [ext_resource path="res://external/aseprite/logo_animation/double_swipe_with_signature_drawer_and_small_shine_000.png" type="Texture" id=2]
@@ -92,6 +92,7 @@
 [ext_resource path="res://external/aseprite/logo_animation/double_swipe_with_signature_drawer_and_small_shine_088.png" type="Texture" id=90]
 [ext_resource path="res://external/aseprite/logo_animation/double_swipe_with_signature_drawer_and_small_shine_089.png" type="Texture" id=91]
 [ext_resource path="res://external/aseprite/logo_animation/logo_background_big_square.png" type="Texture" id=92]
+[ext_resource path="res://external/sunvox/logo animation/fancy logo sfx.ogg" type="AudioStream" id=93]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -111,14 +112,14 @@ margin_right = 1072.0
 margin_bottom = 603.0
 
 [node name="control" type="Control" parent="center_container"]
-margin_left = 73.0
-margin_top = 221.0
-margin_right = 998.0
-margin_bottom = 381.0
-rect_min_size = Vector2( 925, 160 )
+margin_left = 166.0
+margin_top = 237.0
+margin_right = 906.0
+margin_bottom = 365.0
+rect_min_size = Vector2( 740, 128 )
 
 [node name="logo_sprite" type="AnimatedSprite" parent="center_container/control"]
-scale = Vector2( 5, 5 )
+scale = Vector2( 4, 4 )
 frames = SubResource( 1 )
 centered = false
 
@@ -127,4 +128,8 @@ scale = Vector2( 5, 5 )
 z_index = -1
 texture = ExtResource( 92 )
 centered = false
+
+[node name="audio_stream_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 93 )
+volume_db = -10.0
 

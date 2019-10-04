@@ -6,6 +6,8 @@ func _ready():
 	
 	$center_container/control/logo_sprite.play()
 	
+	$audio_stream_player.play()
+	
 	# wait for logo to play
 	yield(get_tree().create_timer(1.6), "timeout")
 	
