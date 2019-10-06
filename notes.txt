@@ -1,7 +1,122 @@
 
 
+start with nothing
+
+end up with everything
+
+
+katamari damacy
+rpg growth mechanics
+
+
+potential names
+  coming to your senses
+  senseless
+
+metroidvania where even basic abilities must be unlocked
+  sight
+  movement
+  jumping
+  hearing
+  speech
+
+
+UI to show missing abilities
+  Sense of Self
+  
+  Sense of Sight
+  Sense of Pain
+  Sense of Locomotion (movement)
+  Sense of Humor
+  Sense of Wonder
+  
+
+  Sense of Adventure (looking at danger)
+  Sense of Urgency (weapon?)
+
+  common sense?
+
+  False Sense of Security
+  Sense of Pride and Accomplishment
+
+  Sense of Scale
+  Sense of Self Worth
+  Sense of Secrecy
+  Sense of Justice / fairness?
+
+  death: Have you taken leave of your senses? (try again button) - come to your senses?
+
+
+Congratulations!
+You have acquired a sense of self.
+Well done.
+
+sight
+  Currently calibrating your sense of sight.
+  Please look at the four dots.
+  (mouse to look)
+  (swipe transition for "opening your eyes")
+
+pain
+  Currently calibrating your sense of pain.
+  please look at the spike.
+  (mouse to look)
+  (spikes poke you and reveal health hud)
+
+conveyer belt
+  Currently calibrating your sense of adventure.
+  Please look at the most imminent threat.
+    (spikes)
+    looking at spikes starts the conveyer belt
+
+  more threats:
+    doors that stay closed unless you look at them
+    spike pits that close up while you are looking at them
+    flamethrowers that turn off while you are looking at them
+
+  look at different things to avoid getting torched or destroyed
+
+
+conveyer belt dumps you onto your treads/wheels/feet, now you can move!
+  Currently calibrating your sense of locomotion.
+  Please proceed with all haste.
+  (wasd or arrow keys to move)
+
+  spike wall chasing you?
+  hazards you can dodge by looking at them or by timing movement
+
+
+foreshadow jumping abilities
+  sense of urgency
+
+
+
+
+
+
+
+
 TODO
+  no-music music
+  grace period for mouse leaving a hazard
+  exploding flagpoles
+DONE
+  main menu music
+  mouse custom eyeball cursor
+  fade out visual cues
+  player head tracks mouse
+  music: better music
+  music: hi hats
+  music: better transitions
+  levels
+
+
+
+post-jam todo
   post game to itch
   upload vods to twitch
   make timelapse for youtube
   make gifs and tweet
+  update upstream camera limiter addon
+
+  health ui addon

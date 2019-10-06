@@ -1,0 +1,147 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://external/aseprite/character_animations/character_head_swivel_16.png" type="Texture" id=2]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_02.png" type="Texture" id=3]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_03.png" type="Texture" id=4]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_04.png" type="Texture" id=5]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_05.png" type="Texture" id=6]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_06.png" type="Texture" id=7]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_07.png" type="Texture" id=8]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_08.png" type="Texture" id=9]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_09.png" type="Texture" id=10]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_10.png" type="Texture" id=11]
+[ext_resource path="res://external/aseprite/character_animations/character_sprout_camera_11.png" type="Texture" id=12]
+[ext_resource path="res://external/aseprite/character_animations/character_head_swivel_13.png" type="Texture" id=13]
+[ext_resource path="res://external/aseprite/character_animations/character_head_swivel_15.png" type="Texture" id=14]
+[ext_resource path="res://external/aseprite/character_animations/character_head_swivel_14.png" type="Texture" id=15]
+[ext_resource path="res://external/aseprite/character_animations/character_idle_with_treads_20.png" type="Texture" id=16]
+[ext_resource path="res://external/aseprite/character_animations/character_box_00.png" type="Texture" id=17]
+[ext_resource path="res://external/aseprite/character_animations/character_jump_26.png" type="Texture" id=18]
+[ext_resource path="res://external/aseprite/character_animations/character_jump_27.png" type="Texture" id=19]
+[ext_resource path="res://external/aseprite/character_animations/character_jump_28.png" type="Texture" id=20]
+[ext_resource path="res://external/aseprite/character_animations/character_walk_22.png" type="Texture" id=21]
+[ext_resource path="res://external/aseprite/character_animations/character_walk_23.png" type="Texture" id=22]
+[ext_resource path="res://external/aseprite/character_animations/character_walk_24.png" type="Texture" id=23]
+[ext_resource path="res://addons/camera_limiter/focus_limiter.gd" type="Script" id=24]
+[ext_resource path="res://addons/camera_limiter/node.svg" type="Texture" id=25]
+[ext_resource path="res://addons/movement/user_input_direction.gd" type="Script" id=26]
+[ext_resource path="res://addons/movement/node.svg" type="Texture" id=27]
+[ext_resource path="res://kaboom.tscn" type="PackedScene" id=28]
+[ext_resource path="res://ding.tscn" type="PackedScene" id=29]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.2
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "sprout_camera",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": false,
+"name": "down_angle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": false,
+"name": "up_angle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "horizontal",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": false,
+"name": "box",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "jumping",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "moving",
+"speed": 20.0
+} ]
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 24.0
+
+[node name="player" type="RigidBody2D"]
+position = Vector2( 136, 208 )
+collision_layer = 3
+mode = 2
+mass = 2.0
+physics_material_override = SubResource( 1 )
+contacts_reported = 10
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="head_sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -40 )
+scale = Vector2( 4, 4 )
+z_index = -1
+frames = SubResource( 2 )
+animation = "down_angle"
+
+[node name="animated_sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -40 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 3 )
+animation = "box"
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="."]
+shape = SubResource( 4 )
+
+[node name="camera_2d" type="Camera2D" parent="."]
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = true
+smoothing_speed = 10.0
+
+[node name="CameraLimiter" type="Node" parent="camera_2d"]
+script = ExtResource( 24 )
+__meta__ = {
+"_editor_icon": ExtResource( 25 )
+}
+camera_path = NodePath("..")
+
+[node name="user_input_direction" type="Node" parent="."]
+script = ExtResource( 26 )
+__meta__ = {
+"_editor_icon": ExtResource( 27 )
+}
+
+[node name="debug" type="Label" parent="."]
+visible = false
+margin_left = -20.0
+margin_top = -80.0
+margin_right = 20.0
+margin_bottom = -66.0
+
+[node name="kaboom" parent="." instance=ExtResource( 28 )]
+visible = false
+
+[node name="ding" parent="." instance=ExtResource( 29 )]
+

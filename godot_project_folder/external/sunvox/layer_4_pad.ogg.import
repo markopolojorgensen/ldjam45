@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/layer_4_pad.ogg-fa470f5052383bf60654b994e10fc968.oggstr"
+
+[deps]
+
+source_file="res://external/sunvox/layer_4_pad.ogg"
+dest_files=[ "res://.import/layer_4_pad.ogg-fa470f5052383bf60654b994e10fc968.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

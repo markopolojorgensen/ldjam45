@@ -1,7 +1,7 @@
 COLORTOOL v1.0
-SECTION PALETTE 0
-
-SECTION DOCUMENT 481
+SECTION PALETTE 263
+#0d0426 #140930 #1b0f3c #231548 #2c1c54 #362460 #402d6d #4b367a #574087 #634c94 #7058a1 #7e66ae #8d75bc #9e87c9 #b09bd7 #c5b3e5 #e3daf2 #4c4685 #545c92 #62799f #7096ac #80b3ba #93c8c0 #a8d6c3 #cae4d3 #694184 #8b4e90 #9c5d8b #a96e83 #b78281 #c5a996 #d3cbad #dce1c6
+SECTION DOCUMENT 2953
 {
  "id": "15693777092668139190",
  "filepath": "/home/mark/fuel/data/godot/ldjams/LDJAM45/godot_project_folder/external/ldjam45_palette.clrpal",
@@ -15,17 +15,202 @@ SECTION DOCUMENT 481
    ]
   },
   "draw_grid": false,
-  "zoom": 0,
+  "zoom": 1.284222,
   "scroll": {
    "_t": "Vector2",
    "value": [
-    0,
-    0
+    2.285704,
+    -1.276195
    ]
   },
   "old_path_root": "/home/mark/fuel/data/godot/ldjams/LDJAM45/godot_project_folder/external"
  },
  "objects": [
-
+  {
+   "_t": "ColorShard",
+   "_v": 1,
+   "id": "Clr0001",
+   "position": {
+    "_t": "Vector2",
+    "value": [
+     -135,
+     -39
+    ]
+   },
+   "color": {
+    "_t": "Vector3",
+    "value": [
+     0.692558,
+     0.940786,
+     0.019607
+    ]
+   },
+   "color_space": "Linear HSV"
+  },
+  {
+   "_t": "ColorShard",
+   "_v": 1,
+   "id": "Clr0002",
+   "position": {
+    "_t": "Vector2",
+    "value": [
+     89,
+     -39
+    ]
+   },
+   "color": {
+    "_t": "Vector3",
+    "value": [
+     0.725095,
+     0.212046,
+     0.890005
+    ]
+   },
+   "color_space": "Linear HSV"
+  },
+  {
+   "_t": "ColorRamp",
+   "_v": 0,
+   "id": "Ramp0003",
+   "from": "Clr0001",
+   "to": "Clr0002",
+   "steps": 15,
+   "color_space": "HSV",
+   "curve_shape": 1.08,
+   "curves": [
+    -1,
+    -0.63,
+    -1
+   ],
+   "offsets": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "_t": "ColorShard",
+   "_v": 1,
+   "id": "Clr001B",
+   "position": {
+    "_t": "Vector2",
+    "value": [
+     57,
+     9
+    ]
+   },
+   "color": {
+    "_t": "Vector3",
+    "value": [
+     0.384937,
+     0.188722,
+     0.728975
+    ]
+   },
+   "color_space": "HCY"
+  },
+  {
+   "_t": "ColorShard",
+   "_v": 1,
+   "id": "Clr001C",
+   "position": {
+    "_t": "Vector2",
+    "value": [
+     -39,
+     -23
+    ]
+   },
+   "color": {
+    "_t": "Vector3",
+    "value": [
+     0.294257,
+     0.212799,
+     0.477602
+    ]
+   },
+   "color_space": "sRGB"
+  },
+  {
+   "_t": "ColorRamp",
+   "_v": 0,
+   "id": "Ramp001D",
+   "from": "Clr001C",
+   "to": "Clr001B",
+   "steps": 7,
+   "color_space": "HSV",
+   "curve_shape": 1.08,
+   "curves": [
+    -1,
+    -0.63,
+    -1
+   ],
+   "offsets": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "_t": "ColorShard",
+   "_v": 1,
+   "id": "Clr0020",
+   "position": {
+    "_t": "Vector2",
+    "value": [
+     -39,
+     -55
+    ]
+   },
+   "color": {
+    "_t": "Vector3",
+    "value": [
+     0.294257,
+     0.212799,
+     0.477602
+    ]
+   },
+   "color_space": "sRGB"
+  },
+  {
+   "_t": "ColorShard",
+   "_v": 1,
+   "id": "Clr0022",
+   "position": {
+    "_t": "Vector2",
+    "value": [
+     57,
+     -87
+    ]
+   },
+   "color": {
+    "_t": "Vector3",
+    "value": [
+     0.200837,
+     0.188722,
+     0.728975
+    ]
+   },
+   "color_space": "HCY"
+  },
+  {
+   "_t": "ColorRamp",
+   "_v": 0,
+   "id": "Ramp0023",
+   "from": "Clr0020",
+   "to": "Clr0022",
+   "steps": 7,
+   "color_space": "HSV",
+   "curve_shape": 1.11,
+   "curves": [
+    -1,
+    -1,
+    -1
+   ],
+   "offsets": [
+    0,
+    0,
+    0
+   ]
+  }
  ]
 }

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/layer_1_kicker.ogg-b9bbcf4380acb9ae2581068b5d5d3535.oggstr"
+
+[deps]
+
+source_file="res://external/sunvox/layer_1_kicker.ogg"
+dest_files=[ "res://.import/layer_1_kicker.ogg-b9bbcf4380acb9ae2581068b5d5d3535.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

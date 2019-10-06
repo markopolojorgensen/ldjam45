@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://conveyer_belt.gd" type="Script" id=1]
+[ext_resource path="res://external/aseprite/conveyer_belt_frames/conveyer_belt_00.png" type="Texture" id=2]
+[ext_resource path="res://external/aseprite/conveyer_belt_frames/conveyer_belt_01.png" type="Texture" id=3]
+[ext_resource path="res://external/aseprite/conveyer_belt_frames/conveyer_belt_02.png" type="Texture" id=4]
+[ext_resource path="res://external/aseprite/conveyer_belt_frames/conveyer_belt_03.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 120, 20 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 120, 10 )
+
+[node name="conveyor_belt" type="StaticBody2D"]
+position = Vector2( 320, 416 )
+z_index = -1
+collision_mask = 0
+script = ExtResource( 1 )
+running = true
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 20 )
+shape = SubResource( 1 )
+
+[node name="animated_sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 4, 4 )
+frames = SubResource( 2 )
+
+[node name="area_2d" type="Area2D" parent="."]
+position = Vector2( 0, -8 )
+
+[node name="collision_shape_2d" type="CollisionShape2D" parent="area_2d"]
+shape = SubResource( 3 )
+

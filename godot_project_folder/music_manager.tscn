@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://music_manager.gd" type="Script" id=1]
+[ext_resource path="res://external/sunvox/layer_1_kicker.ogg" type="AudioStream" id=2]
+[ext_resource path="res://external/sunvox/layer_2_hats.ogg" type="AudioStream" id=3]
+[ext_resource path="res://external/sunvox/layer_3_plucks.ogg" type="AudioStream" id=4]
+[ext_resource path="res://external/sunvox/layer_4_pad.ogg" type="AudioStream" id=5]
+[ext_resource path="res://external/sunvox/layer_5_lead.ogg" type="AudioStream" id=6]
+
+[node name="music_manager" type="Node"]
+script = ExtResource( 1 )
+
+[node name="audio_stream_player_1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.0
+
+[node name="audio_stream_player_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.0
+
+[node name="audio_stream_player_3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+
+[node name="audio_stream_player_4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+
+[node name="audio_stream_player_5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.0
+
+[node name="canvas_layer" type="CanvasLayer" parent="."]
+
+[node name="v_box_container" type="VBoxContainer" parent="canvas_layer"]
+visible = false
+margin_right = 40.0
+margin_bottom = 86.0
+
+[node name="label_1" type="Label" parent="canvas_layer/v_box_container"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="label_2" type="Label" parent="canvas_layer/v_box_container"]
+margin_top = 18.0
+margin_right = 40.0
+margin_bottom = 32.0
+
+[node name="label_3" type="Label" parent="canvas_layer/v_box_container"]
+margin_top = 36.0
+margin_right = 40.0
+margin_bottom = 50.0
+
+[node name="label_4" type="Label" parent="canvas_layer/v_box_container"]
+margin_top = 54.0
+margin_right = 40.0
+margin_bottom = 68.0
+
+[node name="label_5" type="Label" parent="canvas_layer/v_box_container"]
+margin_top = 72.0
+margin_right = 40.0
+margin_bottom = 86.0
+

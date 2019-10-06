@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ding.ogg-3fcabd31dc5f72a32d303441f298d7ad.oggstr"
+
+[deps]
+
+source_file="res://external/sunvox/ding.ogg"
+dest_files=[ "res://.import/ding.ogg-3fcabd31dc5f72a32d303441f298d7ad.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -8,10 +8,7 @@ This is a submission for Ludum Dare 45. I made it in about 48 hours.
 <!-- * [Youtube Timelapse]() -->
 <!-- * [Source Code]() -->
 
-
 ### Technology
-
-Made with love and:
 
 * [Godot](https://godotengine.org/)
 * [Sunvox](https://www.warmplace.ru/soft/sunvox/)

@@ -11,6 +11,10 @@ func _ready():
 	# wait for logo to play
 	yield(get_tree().create_timer(1.6), "timeout")
 	
-	# start actual game
-	get_tree().quit()
+	$tween.interpolate_property(self, "modulate", Color.white, Color(1,1,1,0), 0.2, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	$tween.start()
 	
+	yield($tween, "tween_completed")
+	
+	queue_free()
+

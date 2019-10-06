@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/layer_3_plucks.ogg-1992613203005f0bb7b921e7a069dbd2.oggstr"
+
+[deps]
+
+source_file="res://external/sunvox/layer_3_plucks.ogg"
+dest_files=[ "res://.import/layer_3_plucks.ogg-1992613203005f0bb7b921e7a069dbd2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

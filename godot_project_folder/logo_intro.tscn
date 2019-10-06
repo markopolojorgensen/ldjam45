@@ -108,14 +108,14 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="center_container" type="CenterContainer" parent="."]
-margin_right = 1072.0
-margin_bottom = 603.0
+margin_right = 1024.0
+margin_bottom = 576.0
 
 [node name="control" type="Control" parent="center_container"]
-margin_left = 166.0
-margin_top = 237.0
-margin_right = 906.0
-margin_bottom = 365.0
+margin_left = 142.0
+margin_top = 224.0
+margin_right = 882.0
+margin_bottom = 352.0
 rect_min_size = Vector2( 740, 128 )
 
 [node name="logo_sprite" type="AnimatedSprite" parent="center_container/control"]
@@ -132,4 +132,6 @@ centered = false
 [node name="audio_stream_player" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 93 )
 volume_db = -20.0
+
+[node name="tween" type="Tween" parent="."]
 
